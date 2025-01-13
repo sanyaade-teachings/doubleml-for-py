@@ -16,9 +16,11 @@ from .irm.pq import DoubleMLPQ
 from .irm.lpq import DoubleMLLPQ
 from .irm.cvar import DoubleMLCVAR
 from .irm.ssm import DoubleMLSSM
+from .logistic.logistic import DoubleMLLogit
 
 from .utils.blp import DoubleMLBLP
 from .utils.policytree import DoubleMLPolicyTree
+
 
 __all__ = [
     'concat',
@@ -39,7 +41,8 @@ __all__ = [
     'DoubleMLCVAR',
     'DoubleMLBLP',
     'DoubleMLPolicyTree',
-    'DoubleMLSSM'
+    'DoubleMLSSM',
+    'DoubleMLLogit'
 ]
 
 __version__ = importlib.metadata.version('doubleml')
